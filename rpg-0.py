@@ -13,6 +13,16 @@ def main():
     goblin_health = 6
     goblin_power = 2
 
+    class Hero:
+        def __init__(self,hero_health,hero_power):
+            self.hero_health = hero_health
+            self.hero_power = hero_power
+
+    class Goblin:
+        def __init__(self,goblin_health,goblin_power):
+            self.goblin_health = goblin_health
+            self.goblin_power = goblin_power
+
     while goblin_health > 0 and hero_health > 0:
         print("You have %d health and %d power." % (hero_health, hero_power))
         print("The goblin has %d health and %d power." % (goblin_health, goblin_power))
